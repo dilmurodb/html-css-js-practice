@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML-CSS-JS-Practice</title>
+    <title>Практика Верстки</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h1>Экспериментальный сайт</h1>
+    <a href=""><h3>Таблица</h3></a>
+    <a href=""><h3>Видео</h3></a>
+    <a href=""><h3>Аудио</h3></a>
     <table>
+        <colgroup>
+            <col style="background-color: red" span="3"/>
+            <col style="background-color: yellow" />
+            <col style="background-color: green" span="3"/>
+        </colgroup>
         <tr>
             <th>ФИО студента</th>
             <th>Дата рождения</th>
@@ -64,6 +72,38 @@
             <td>2017</td>
         </tr>
     </table>
+    <form>
+        <label for="pin">Введите пароль</label>
+        <input type="password" id="pin" placeholder="1234567..."/><br/>
+        <lable for="email">Введите электронный почтовый аддресс</lable>
+        <input type="email" id="email" placeholder="mirkin.a@yandex.ru"/><br/>
+        <lable for="name">Введите ФИО</lable>
+        <input type="text" id="name" placeholder="Миркин Андрей"/>
+        <lable for checkbox>Отметить</lable>
+        <input type="checkbox" id="checkbox"/>
+        <button>Нажмите здесь</button><br/>
+        <label for="date">Введите число</label>
+        <input type="date" id="date"/><br/>
+        <label for="number">Введите номер</label>
+        <input type="number" id="number" /><br/>
+        <label for="tel">Введите номер телефона</label>
+        <input type="tel" id="tel" />
+    </form>
+    <form action="www.yandex.ru">
+        <label for="email">Введите электронную почту</label>
+        <input type="email" id="email"/> <br/>
+        <label for="password">Введите пароль</label>
+        <input type="password" id="password"/>
+    </form>
+    <pre>
+        На данном этапе мы создали загаловок и позаголовки с ссылками...
+                Также была создана таблица.
+            В таблице заполнены данные о студентах поступивших - 
+                    и не поступивших в вузы.
+            Таблица окрашена на разные цвета с целью облегчения для чтения.
+                    Также созданы формы всяких типов начиная от форм заполнения -
+            электронной почты и выбора даты
+    </pre>
 
     <!-- <a href="#box">Здесь будет название книги</a>
     <p>Надо больше <b>концентрировать</b> свое <strong>время</strong> на изучение <em>программирования</em> и улучшение <i>навыков</i> предодавания</p>
