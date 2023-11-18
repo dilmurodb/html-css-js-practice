@@ -7,10 +7,18 @@
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Экспериментальный сайт</h1>
-    <a href=""><h3>Таблица</h3></a>
-    <a href=""><h3>Видео</h3></a>
-    <a href=""><h3>Аудио</h3></a>
+
+    <header>
+        <h1>Экспериментальный сайт</h1>
+        <nav>
+            <ul>
+                <li><a href=""><h3>Таблица</h3></a></li>
+                <li><a href=""><h3>Видео</h3></a></li>
+                <li><a href=""><h3>Аудио</h3></a></li>
+            </ul>
+        </nav>
+    </header>
+
     <table>
         <colgroup>
             <col style="background-color: red" span="3"/>
@@ -95,7 +103,7 @@
         <label for="password">Введите пароль</label>
         <input type="password" id="password"/>
     </form>
-    <pre>
+    <pre style="font-size: 20px; border: 2px solid red; background-color: orange;">
         На данном этапе мы создали загаловок и позаголовки с ссылками...
                 Также была создана таблица.
             В таблице заполнены данные о студентах поступивших - 
@@ -104,6 +112,84 @@
                     Также созданы формы всяких типов начиная от форм заполнения -
             электронной почты и выбора даты
     </pre>
+    <h3>Какие источники новостей вы бы хотели прочесть?</h3>
+    <form action="/people">
+        <label>
+            <input type="checkbox" name="news" value="vedomosti"/>
+            Ведомости
+        </label>
+        <br/>
+        <label>
+            <input type="checkbox" name="news" value="izvestia"/>
+            Известия
+        </label>
+        <br/>
+        <label>
+            <input type="checkbox" name="news" value="gazeta.uz"/>
+            ГазетаУз
+        </label>
+    </form>
+    <h3>Насколько хорошо вы знаете Русский язык? Укажите по семибальной шкале:</h3>
+    <form action="www.yandex.ru" method="get">
+        <label>
+            <input type="radio" name="question" value="1"/>
+            1
+        </label>
+        <label>
+            <input type="radio" name="question" value="2"/>
+            2
+        </label>
+        <label>
+            <input type="radio" name="question" value="3"/>
+            3
+        </label>
+        <label>
+            <input type="radio" name="question" value="4"/>
+            4
+        </label>
+        <label>
+            <input type="radio" name="question" value="5"/>
+            5
+        </label>
+        <label>
+            <input type="radio" name="question" value="6"/>
+            6
+        </label>
+        <label>
+            <input type="radio" name="question" value="7"/>
+            7
+        </label>
+    </form>
+    <form action="www.yandex.ru" method="post">
+        <label>
+            Введите свои комментарии<br/>
+            <textarea rows="7" cols="27"></textarea>
+        </label>
+    </form>
+    <form>
+        <select>
+            <option disabled>Выберите автора</option>
+            <option>Пушкин</option>
+            <option>Толстой</option>
+            <option>Ахматова</option>
+            <option>Хаматова</option>
+            <option>Достоевский</option>
+            <option>Солженицын</option>
+            <option>Навои</option>
+        </select>
+    </form>
+    <form>
+        <label>
+            Введите ваш запрос
+            <input type="search"/>
+        </label>
+        <select>
+            <option>Курсы Программирования</option>
+            <option>Курсы Алгебры</option>
+            <option>Курсы Геометрии</option>
+        </select>
+        <button>Искать</button>
+    </form>
 
     <!-- <a href="#box">Здесь будет название книги</a>
     <p>Надо больше <b>концентрировать</b> свое <strong>время</strong> на изучение <em>программирования</em> и улучшение <i>навыков</i> предодавания</p>
